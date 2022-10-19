@@ -1,0 +1,32 @@
+Gallery As CanvasComponent:
+    C_Height: =100
+    C_Items: |-
+        =Table({SampleStringField: "SampleText", SampleNumberField: 10, SampleBooleanField: true})
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =640
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Gallery3 As gallery.galleryVertical:
+        Height: =602
+        Items: |-
+            =Table(
+                {SampleStringField: "SampleText1"},
+                {SampleStringField: "SampleText2"},
+                {SampleStringField: "SampleText3"},
+                {SampleStringField: "SampleText4"}
+            )
+        Layout: =Layout.Vertical
+        TemplateSize: =50
+        Y: =12
+        ZIndex: =1
+
+        Label8 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.SampleStringField
+            X: =40
+            Y: =40
+            ZIndex: =1
+

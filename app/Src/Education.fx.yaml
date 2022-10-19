@@ -1,0 +1,72 @@
+Education As screen:
+    Fill: =RGBA(237, 247, 223, 0.29)
+
+    Menu_2 As Menu:
+        c_MenuItems: |-
+            =Table(
+                		{
+                    MenuName: "ABOUT ME", 
+            		MenuDesc: "WHO AM I",
+                    MenuIcon: Icon.Person,       
+                    MenuScreenNavigate: AboutMe,
+                    MenuID: 1      
+                },
+            	{
+                    MenuName: "EDUCATION", 
+            		MenuDesc: "ABOUT MY STUDY",
+                    MenuIcon: Icon.Notebook,       
+                    MenuScreenNavigate: Education,
+                    MenuID: 2      
+                },
+            	{
+                    MenuName: "EXPERIENCE", 
+            		MenuDesc: "ABOUT MY CAREER",
+                    MenuIcon: Icon.TrendingUpwards,       
+                    MenuScreenNavigate: Experience,
+                    MenuID: 1      
+                },
+            	{
+                    MenuName: "CONTACT", 
+            		MenuDesc: "SAY HELLO",
+                    MenuIcon: Icon.Phone,       
+                    MenuScreenNavigate: Contact,
+                    MenuID: 1      
+                }
+            	
+            )
+        c_UserPhoto: =IMG_20211208_123542
+        Height: =768
+        Width: =Menu_2.C_Width
+
+    Label2_3 As label:
+        Align: =Align.Center
+        Color: =RGBA(116, 116, 116, 1)
+        DisabledColor: =RGBA(149, 149, 149, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =50
+        Size: =24
+        Text: ="EDUCATION"
+        Width: =500
+        X: =501
+        Y: =51
+        ZIndex: =3
+
+    Rectangle2_1 As rectangle:
+        Fill: =RGBA(255, 191, 0, 1)
+        Height: =15
+        Width: =350
+        X: =576
+        Y: =101
+        ZIndex: =4
+
+    Label6_1 As label:
+        Height: =160
+        Size: =16
+        Text: |-
+            ="Provide some dummy text that is being read from a share point list/ Excel data source. All the fields should be picked up from respective cell value of the data source row. Show the following dummy informations: Program Name, University Name, Years Attended. You can use gallery control to show the list."
+        Width: =928
+        X: =288
+        Y: =177
+        ZIndex: =5
+

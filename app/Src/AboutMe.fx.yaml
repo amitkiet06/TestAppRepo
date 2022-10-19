@@ -1,0 +1,180 @@
+AboutMe As screen:
+    Fill: =RGBA(237, 247, 223, 0.29)
+    OnVisible: |-
+        =If(VarFirstVisited, 
+        Patch(VisitorLog, {Title :User().FullName, Email: User().Email });
+        Set(VarFirstVisited, false);
+        )
+        
+        
+        //
+
+    Menu_1 As Menu:
+        c_MenuItems: |-
+            =Table(
+                		{
+                    MenuName: "ABOUT ME", 
+            		MenuDesc: "WHO AM I",
+                    MenuIcon: Icon.Person,       
+                    MenuScreenNavigate: AboutMe,
+                    MenuID: 1      
+                },
+            	{
+                    MenuName: "EDUCATION", 
+            		MenuDesc: "ABOUT MY STUDY",
+                    MenuIcon: Icon.Notebook,       
+                    MenuScreenNavigate: Education,
+                    MenuID: 2      
+                },
+            	{
+                    MenuName: "EXPERIENCE", 
+            		MenuDesc: "ABOUT MY CAREER",
+                    MenuIcon: Icon.TrendingUpwards,       
+                    MenuScreenNavigate: Experience,
+                    MenuID: 1      
+                },
+            	{
+                    MenuName: "CONTACT", 
+            		MenuDesc: "SAY HELLO",
+                    MenuIcon: Icon.Phone,       
+                    MenuScreenNavigate: Contact,
+                    MenuID: 1      
+                }
+            	
+            )
+        c_UserPhoto: =IMG_20211208_123542
+        Height: =768
+        Width: =Menu_1.C_Width
+
+    Label2 As label:
+        Align: =Align.Center
+        Color: =RGBA(116, 116, 116, 1)
+        DisabledColor: =RGBA(149, 149, 149, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =82
+        Size: =40
+        Text: ="HELLO, I'M"
+        Width: =500
+        X: =500
+        Y: =33
+        ZIndex: =2
+
+    Label2_1 As label:
+        Align: =Align.Center
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =82
+        Size: =50
+        Text: ="AMIT KUMAR"
+        Width: =500
+        X: =500
+        Y: =115
+        ZIndex: =3
+
+    Label3 As label:
+        Font: =Font.'Patrick Hand'
+        Height: =146
+        Size: =20
+        Text: ="Provide some dummy text that is being read from a share point list/ Excel data source. All the fields should be picked up from respective cell value of the data source row"
+        Width: =888
+        X: =330
+        Y: =357
+        ZIndex: =4
+
+    Label2_2 As label:
+        Align: =Align.Center
+        Color: =RGBA(116, 116, 116, 1)
+        DisabledColor: =RGBA(149, 149, 149, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =50
+        Size: =24
+        Text: ="ABOUT ME"
+        Width: =500
+        X: =500
+        Y: =287
+        ZIndex: =5
+
+    Rectangle2 As rectangle:
+        Fill: =RGBA(255, 191, 0, 1)
+        Height: =15
+        Width: =350
+        X: =575
+        Y: =337
+        ZIndex: =6
+
+    Label4 As label:
+        Align: =Align.Right
+        Color: =RGBA(116, 116, 116, 1)
+        Text: ="Date of Birth"
+        X: =575
+        Y: =559
+        ZIndex: =7
+
+    Label5 As label:
+        FontWeight: =FontWeight.Semibold
+        Text: =Today() // "01/01/2022"
+        X: =740
+        Y: =559
+        ZIndex: =8
+
+    Label4_1 As label:
+        Align: =Align.Right
+        Color: =RGBA(116, 116, 116, 1)
+        Text: ="Nationality"
+        X: =575
+        Y: =599
+        ZIndex: =9
+
+    Label5_1 As label:
+        FontWeight: =FontWeight.Semibold
+        Text: ="Indian"
+        X: =740
+        Y: =599
+        ZIndex: =10
+
+    Label4_2 As label:
+        Align: =Align.Right
+        Color: =RGBA(116, 116, 116, 1)
+        Text: ="Marital Status"
+        X: =575
+        Y: =639
+        ZIndex: =11
+
+    Label5_2 As label:
+        FontWeight: =FontWeight.Semibold
+        Text: ="Married"
+        X: =740
+        Y: =639
+        ZIndex: =12
+
+    Label4_3 As label:
+        Align: =Align.Right
+        Color: =RGBA(116, 116, 116, 1)
+        Text: ="Language Known"
+        X: =575
+        Y: =679
+        ZIndex: =13
+
+    Label5_3 As label:
+        FontWeight: =FontWeight.Semibold
+        Text: ="Hindi, English"
+        X: =740
+        Y: =679
+        ZIndex: =14
+
+    Gallery_1 As Gallery:
+        C_Height: =200
+        C_Items: |-
+            =Table(
+                {SampleStringField: "SampleText1"},
+                {SampleStringField: "SampleText2"},
+                {SampleStringField: "SampleText3"},
+                {SampleStringField: "SampleText4"}
+            )
+        Height: =324
+        Width: =218
+        X: =1147
+        ZIndex: =15
+

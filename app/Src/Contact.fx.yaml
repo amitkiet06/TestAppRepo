@@ -1,0 +1,77 @@
+Contact As screen:
+    Fill: =RGBA(237, 247, 223, 0.29)
+
+    Image1 As image:
+        Image: =
+        X: =1017
+        Y: =150
+        ZIndex: =2
+
+    Menu_4 As Menu:
+        c_MenuItems: |-
+            =Table(
+                		{
+                    MenuName: "ABOUT ME", 
+            		MenuDesc: "WHO AM I",
+                    MenuIcon: Icon.Person,       
+                    MenuScreenNavigate: AboutMe,
+                    MenuID: 1      
+                },
+            	{
+                    MenuName: "EDUCATION", 
+            		MenuDesc: "ABOUT MY STUDY",
+                    MenuIcon: Icon.Notebook,       
+                    MenuScreenNavigate: Education,
+                    MenuID: 2      
+                },
+            	{
+                    MenuName: "EXPERIENCE", 
+            		MenuDesc: "ABOUT MY CAREER",
+                    MenuIcon: Icon.TrendingUpwards,       
+                    MenuScreenNavigate: Experience,
+                    MenuID: 1      
+                },
+            	{
+                    MenuName: "CONTACT", 
+            		MenuDesc: "SAY HELLO",
+                    MenuIcon: Icon.Phone,       
+                    MenuScreenNavigate: Contact,
+                    MenuID: 1      
+                }
+            	
+            )
+        c_UserPhoto: =IMG_20211208_123542
+        Height: =768
+        Width: =Menu_4.C_Width
+        ZIndex: =3
+
+    Label2_5 As label:
+        Align: =Align.Center
+        Color: =RGBA(116, 116, 116, 1)
+        DisabledColor: =RGBA(149, 149, 149, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =50
+        Size: =24
+        Text: ="CONTACT ME"
+        Width: =500
+        X: =501
+        Y: =51
+        ZIndex: =5
+
+    Rectangle2_3 As rectangle:
+        Fill: =RGBA(255, 191, 0, 1)
+        Height: =15
+        Width: =350
+        X: =576
+        Y: =101
+        ZIndex: =6
+
+    Image3 As image:
+        Height: =473
+        Image: ='graphic-design-resume-contact'
+        Width: =968
+        X: =300
+        Y: =207
+        ZIndex: =7
+

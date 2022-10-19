@@ -1,0 +1,30 @@
+{
+  "5dffab95-2f4d-4c16-b196-d14a46025e16": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1591/1.0.1591.2961/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://becpsn.sharepoint.com/teams/AmitPOC": {
+        "dataSources": {
+          "VisitorLog": {
+            "tableName": "34736c61-51c8-4064-8dc4-6e7b302eebd9"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "VisitorLog"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "5dffab95-2f4d-4c16-b196-d14a46025e16"
+  }
+}

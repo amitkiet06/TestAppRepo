@@ -1,0 +1,82 @@
+Experience As screen:
+    Fill: =RGBA(237, 247, 223, 0.29)
+
+    Menu_3 As Menu:
+        c_MenuItems: |-
+            =Table(
+                		{
+                    MenuName: "ABOUT ME", 
+            		MenuDesc: "WHO AM I",
+                    MenuIcon: Icon.Person,       
+                    MenuScreenNavigate: AboutMe,
+                    MenuID: 1      
+                },
+            	{
+                    MenuName: "EDUCATION", 
+            		MenuDesc: "ABOUT MY STUDY",
+                    MenuIcon: Icon.Notebook,       
+                    MenuScreenNavigate: Education,
+                    MenuID: 2      
+                },
+            	{
+                    MenuName: "EXPERIENCE", 
+            		MenuDesc: "ABOUT MY CAREER",
+                    MenuIcon: Icon.TrendingUpwards,       
+                    MenuScreenNavigate: Experience,
+                    MenuID: 1      
+                },
+            	{
+                    MenuName: "CONTACT", 
+            		MenuDesc: "SAY HELLO",
+                    MenuIcon: Icon.Phone,       
+                    MenuScreenNavigate: Contact,
+                    MenuID: 1      
+                }
+            	
+            )
+        c_UserPhoto: =IMG_20211208_123542
+        Height: =768
+        Width: =Menu_3.C_Width
+
+    Button1_1 As button:
+        Height: =46
+        OnSelect: |-
+            =Launch("https://becpsn.sharepoint.com/:b:/r/teams/AE-SkillDevelopment/Shared%20Documents/PowerApps/PowerAppTrainingDeck/App%20In%20A%20Day%20Workshop%20Manual%20-%20Final.pdf?csf=1&web=1&e=hkxkQ2")
+        Text: ="View Resume"
+        Width: =250
+        X: =1065
+        Y: =51
+        ZIndex: =2
+
+    Label2_4 As label:
+        Align: =Align.Center
+        Color: =RGBA(116, 116, 116, 1)
+        DisabledColor: =RGBA(149, 149, 149, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =50
+        Size: =24
+        Text: ="EXPERIENCE"
+        Width: =500
+        X: =501
+        Y: =51
+        ZIndex: =3
+
+    Rectangle2_2 As rectangle:
+        Fill: =RGBA(255, 191, 0, 1)
+        Height: =15
+        Width: =350
+        X: =576
+        Y: =101
+        ZIndex: =4
+
+    Label6 As label:
+        Height: =160
+        Size: =16
+        Text: |-
+            ="Provide some dummy text that is being read from a share point list/ Excel data source. All the fields should be picked up from respective cell value of the data source row. Show the following informations: Job Title/Position, Company Name / Location / Description, Achievements and Responsibilities, Dates Employed. You can use gallery control to show the list."
+        Width: =928
+        X: =288
+        Y: =177
+        ZIndex: =5
+
